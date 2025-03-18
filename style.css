@@ -20,6 +20,8 @@ body {
 /* Header */
 header {
    margin-bottom: 30px;
+   display: flex;
+   flex-direction: column;
 }
 header .advantage {
    font-size: 32px;
@@ -35,7 +37,6 @@ header p:nth-last-child(1) {
 
 /* Part Main */
 main {
-   /* A verifier */
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    margin: 0 50px;
@@ -44,7 +45,6 @@ main {
    height: 510px;
 }
 section {
-   /* A verifier */
    position: relative;
    text-align: left;
    min-height: 200px;
@@ -70,20 +70,20 @@ main .supervisor {
 main .builder {
    border-top: 5px solid rgb(239, 98, 98);
    position: absolute;
-   z-index: 2;
+   z-index: 1;
    left: 480px;
 }
 main .karma {
    border-top: 5px solid orange;
    position: absolute;
-   z-index: 3;
+   z-index: 1;
    top: 280px;
    left: 480px;
 }
 main .calculator {
    border-top: 5px solid rgb(108, 108, 215);
    position: absolute;
-   z-index: 4;
+   z-index: 1;
    top: 160px;
    right: 105px;
 }
@@ -95,3 +95,5 @@ section p {
    margin-left: 31px;
 }
 /* Media Querie */
+@media screen and (max-width: 350px) {
+}
