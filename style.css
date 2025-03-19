@@ -81,11 +81,31 @@ main .calculator {
 /* Media Querie */
 @media screen and (max-width: 850px) {
    main {
+      width: 100%;
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 1.5rem;
       position: none;
       margin-bottom: 50px;
+   }
+   section {
+      width: 90%;
+   }
+   .mobile-sup {
+      position: relative;
+   }
+   .mobile-sup img {
+      position: absolute;
+      top: 160px;
+      right: 40px;
+   }
+   .mobile-calc {
+      position: relative;
+   }
+   .mobile-calc img {
+      position: absolute;
+      right: 40px;
    }
    main .supervisor {
       border-top: 5px solid skyblue;
