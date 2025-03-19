@@ -11,12 +11,11 @@ body {
    align-items: center;
    flex-direction: column;
    text-align: center;
-   min-height: 50px;
 }
 
-.content {
+/* .content {
    width: 100%;
-}
+} */
 /* Header */
 header {
    margin-bottom: 30px;
@@ -37,63 +36,48 @@ header p:nth-last-child(1) {
 
 /* Part Main */
 main {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   margin: 0 50px;
-   gap: 30px;
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
    position: relative;
-   height: 510px;
 }
 section {
    position: relative;
-   text-align: left;
-   min-height: 200px;
-   border-radius: 8px;
    width: 400px;
    height: 250px;
+   text-align: left;
+   padding: 30px;
+   border-radius: 10px;
    box-shadow: 1px 1px 4px;
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15), 0 2px 10px rgba(0, 0, 0, 0.1);
    background-color: white;
 }
 section img {
    position: absolute;
-   bottom: 40px;
-   right: 40px;
+   bottom: 30px;
+   right: 20px;
 }
 main .supervisor {
    border-top: 5px solid skyblue;
    position: absolute;
    z-index: 1;
    top: 160px;
-   left: 50px;
+   left: -425px;
 }
 main .builder {
    border-top: 5px solid rgb(239, 98, 98);
-   position: absolute;
-   z-index: 1;
-   left: 480px;
 }
 main .karma {
    border-top: 5px solid orange;
-   position: absolute;
-   z-index: 1;
-   top: 280px;
-   left: 480px;
 }
 main .calculator {
    border-top: 5px solid rgb(108, 108, 215);
    position: absolute;
    z-index: 1;
    top: 160px;
-   right: 105px;
+   right: -425px;
 }
-main h2 {
-   margin-left: 35px;
-   margin-top: 20px;
-}
-section p {
-   margin-left: 31px;
-}
+
 /* Media Querie */
-@media screen and (max-width: 350px) {
-}
+/* @media screen and (max-width: 350px) {
+} */
